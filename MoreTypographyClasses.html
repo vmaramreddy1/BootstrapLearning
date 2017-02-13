@@ -214,5 +214,64 @@
      </p>
   </div>
 
+  <div class="container">
+    <h2><code>.pre-scrollable</code>&nbsp;<small>class example</small></h2>
+    <p>For multiple lines of code , use the <strong>pre</strong> element:</p>
+    <pre>
+      #include&lt;stdio.h&gt;
+      #include&lt;conio.h&gt;
+      int main()
+      {
+        clrscr();
+        printf("Input a number :>");
+        scanf("%d",&raw_input);
+        for(int i=0; i< 100; i++)
+        {
+          printf("%d", raw_input*2);
+        }
+
+        for(int i =0 ; i< raw_input ; i++)
+        {
+          for(int j=0; j< i; j++)
+          {
+            printf("\t%d",j);
+          }
+          printf("\n");
+        }
+        getch();
+      }
+    </pre>
+
+    <p>
+      If you add the <code>.pre-scrollable</code> class , the pre element gets max-height of 350 px
+      and provides a y-axis scrollbar:
+    </p>
+
+    <pre class="pre-scrollable">
+      #include&lt;stdio.h&gt;
+      #include&lt;conio.h&gt;
+      int main()
+      {
+        clrscr();
+        printf("Input a number :>");
+        scanf("%d",&raw_input);
+        for(int i=0; i< 100; i++)
+        {
+          printf("%d", raw_input*2);
+        }
+
+        for(int i =0 ; i< raw_input ; i++)
+        {
+          for(int j=0; j< i; j++)
+          {
+            printf("\t%d",j);
+          }
+          printf("\n");
+        }
+        getch();
+      }
+    </pre>
+  </div>
+
 </body>
 </html>
